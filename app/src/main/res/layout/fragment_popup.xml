@@ -1,0 +1,181 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context="com.muzenly.dialog.fragment.PopupFragment">
+
+    <RelativeLayout
+        android:id="@+id/rltTop"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="20dp"
+        android:background="@drawable/bg_profile">
+
+        <com.muzenly.dialog.view.CircleImageView
+            android:id="@+id/ivProfile"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginRight="20dp"
+            android:src="@drawable/profile"
+            app:border_color="@android:color/white"
+            app:border_width="1dp"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/tvName"
+            android:layout_toRightOf="@+id/ivProfile"
+            android:layout_alignTop="@+id/ivProfile"
+            android:text="Ilya Volodarsky"
+            android:textColor="@android:color/white"
+            android:textSize="16sp"
+            />
+
+        <TextView
+            android:id="@+id/tvEmail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/ivProfile"
+            android:layout_below="@+id/tvName"
+            android:layout_marginTop="3dp"
+            android:text="ivolo@segment.com"
+            android:textColor="@android:color/white"
+            android:textSize="13sp"
+            />
+
+        <TextView
+            android:id="@+id/tvPlace"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/ivProfile"
+            android:layout_below="@+id/tvEmail"
+            android:layout_marginTop="3dp"
+            android:text="San Francisco, CA, US"
+            android:textColor="@android:color/white"
+            android:textSize="13sp"
+            />
+        
+        <com.muzenly.dialog.view.CircleImageView
+            android:id="@+id/ivLinkedin"
+            android:layout_width="36dp"
+            android:layout_height="36dp"
+            android:src="@drawable/ic_linkedin"
+            android:layout_alignParentRight="true"
+            android:layout_below="@+id/tvPlace"
+            android:layout_marginTop="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginBottom="15dp"/>
+
+        <com.muzenly.dialog.view.CircleImageView
+            android:id="@+id/ivTwitter"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_twitter"
+            android:layout_toLeftOf="@+id/ivLinkedin"
+            android:layout_below="@+id/tvPlace"
+            android:layout_marginTop="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginBottom="10dp"
+            />
+
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_more_horiz"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="4dp"
+            android:background="?attr/selectableItemBackgroundBorderless"
+            />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="20dp"
+        android:layout_below="@+id/rltTop"
+        android:background="#faf9f9">
+
+        <TextView
+            android:id="@+id/tvDesignation"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Co-Founder @segment, Personas Team"
+            android:textColor="@android:color/black"
+            android:textSize="15sp"
+            android:layout_marginBottom="30dp"/>
+
+        <com.muzenly.dialog.view.CircleImageView
+            android:id="@+id/ivMail"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_mail"
+            android:layout_below="@+id/tvDesignation"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/ivMail"
+            android:layout_below="@+id/tvDesignation"
+            android:layout_marginLeft="10dp"
+            android:text="Mail"
+            android:textStyle="bold"
+            android:textColor="@android:color/black"
+            android:textSize="15sp"/>
+
+        <TextView
+            android:id="@+id/tvMail"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/ivMail"
+            android:layout_marginTop="10dp"
+            android:text="Muzenly + Segment"
+            android:textColor="@android:color/black"
+            android:textSize="15sp"/>
+
+        <TextView
+            android:id="@+id/tvAgo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tvMail"
+            android:layout_marginTop="5dp"
+            android:text="9 hours ago"
+            android:textColor="#888"
+            android:textSize="13sp"
+            android:layout_marginBottom="50dp"/>
+
+        <com.muzenly.dialog.view.CircleImageView
+            android:id="@+id/ivTwitter2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_twit"
+            android:layout_below="@+id/tvAgo"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/ivTwitter2"
+            android:layout_below="@+id/tvAgo"
+            android:layout_marginLeft="10dp"
+            android:text="@ivolo"
+            android:textStyle="bold"
+            android:textColor="@android:color/black"
+            android:textSize="15sp"/>
+
+        <TextView
+            android:id="@+id/tvTwit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/ivTwitter2"
+            android:layout_marginTop="15dp"
+            android:text="RT @sperand_io: The Platform team at Segment has enabled partners to ship 22 integrations to our customers in the last 22 business days."
+            android:textColor="#333"
+            android:textSize="15sp"/>
+
+    </RelativeLayout>
+
+</RelativeLayout>
